@@ -12,6 +12,7 @@ public class Palindrome {
      * @return true if str is a palindrome, false otherwise.
      */
     public boolean pal(String str){
+        // need to go over why stringbuilder did not work
         for(int i = 0, j = str.length()-1; i < str.length()/2; i++, j--)
         {
             if(str.charAt(i) != str.charAt(j)) return false;
